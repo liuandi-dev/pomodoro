@@ -6,8 +6,9 @@
 const MODES = [
   { id: "focus", name: "专注", minutes: 25, note: "关掉干扰，冲刺一个番茄" },
   { id: "break", name: "休息", minutes: 5, note: "起来走走，喝口水" },
+  { id: "long", name: "长休息", minutes: 15, note: "远眺一下，好好放松" },
+
 ];
-{ id: "long", name: "长休息", minutes: 15, note: "远眺一下，好好放松" },
 
 // ===== 状态：全页面只有这几个变量是"真相"，界面都是它们的影子 =====
 let currentMode = MODES[0];
