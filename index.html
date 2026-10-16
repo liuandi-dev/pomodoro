@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍅 番茄钟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ① 头部：标题 + 今日战绩 -->
+  <header>
+    <h1>🍅 番茄钟</h1>
+    <p class="subtitle">求职冲刺 · 今天已完成 <span id="tomato-count">0</span> 个番茄</p>
+  </header>
+
+  <main>
+    <!-- ② 模式按钮：由 script.js 按 MODES 数组自动生成，加模式不用改这里 -->
+    <div id="mode-bar" class="mode-bar"></div>
+
+    <!-- ③ 倒计时主体 -->
+    <section class="timer-card">
+      <p class="mode-name" id="mode-name">专注</p>
+      <p class="time" id="time">25:00</p>
+      <p class="status" id="status">关掉干扰，冲刺一个番茄</p>
+      <div class="controls">
+        <button id="start-btn" class="btn-primary">开始</button>
+        <button id="reset-btn" class="btn-ghost">重置</button>
+      </div>
+    </section>
+
+    <!-- ④ 小贴士 -->
+    <section class="tips">
+      <h2>怎么用</h2>
+      <p>选模式 → 点开始 → 铃响之前别碰手机。专注 25 分钟算一个番茄，今天的目标：先拿下 4 个。</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://liuandi-dev.github.io/homepage/" target="_blank">← 回我的主页</a>
+    <p>Andy · 100 项目挑战 · 项目 #002 · 2026.10.16</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
